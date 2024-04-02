@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Hero from "./components/Hero";
 import Specials from "./components/Specials";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <Hero />
         <Specials />
+        <Testimonials />
       </div>
       <ButtonGradient />
     </>

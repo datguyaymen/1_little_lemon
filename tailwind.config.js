@@ -18,6 +18,7 @@ export default {
           4: "#FBDABB",
           5: "#EDEFEE",
           6: "#333333",
+          7: "#B7C8C2",
         },
         stroke: {
           1: "#26242C",
@@ -35,7 +36,7 @@ export default {
           10: "#43435C",
           11: "#1B1B2E",
           12: "#2E2A41",
-          13: "#6C7275",
+          13: "#CFCFCF",
         },
       },
       fontFamily: {

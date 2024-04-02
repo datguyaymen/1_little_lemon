@@ -12,7 +12,7 @@ const Specials = () => {
           Online Menu
         </button>
       </div>
-      <div className=" flex flex-col flex-wrap md:flex-row lg:flex-row lg:justify-between gap-5 lg:m-10 lg:p-10 my-5">
+      <div className=" flex flex-col flex-wrap md:flex-row lg:flex-row items-center justify-center gap-5 lg:gap-12 lg:m-10 lg:p-10 my-5">
         <div className="max-w-sm rounded-xl overflow-hidden shadow-lg">
           <img src={greeksalad} alt="greeksalad" />
           <div className="px-6 py-4">

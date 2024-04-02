@@ -19,6 +19,7 @@ export default {
           5: "#EDEFEE",
           6: "#333333",
           7: "#B7C8C2",
+          8: "#f5d224",
         },
         stroke: {
           1: "#26242C",
@@ -116,7 +117,8 @@ export default {
             {},
         },
         ".body-2": {
-          "@apply font-light text-[0.875rem] leading-6 md:text-base": {},
+          "@apply font-light text-[0.875rem] leading-6 md:text-base text-justify":
+            {},
         },
         ".caption": {
           "@apply text-sm": {},

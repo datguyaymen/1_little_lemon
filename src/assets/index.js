@@ -8,6 +8,7 @@ import mark from "./mark.png";
 import mary from "./mary.jpg";
 import lisa from "./lisa.jpg";
 import judy from "./judy.jpg";
+import about from "./About.jpg";
 export {
   logo,
   restaurant,
@@ -19,4 +20,5 @@ export {
   mary,
   lisa,
   judy,
+  about,
 };

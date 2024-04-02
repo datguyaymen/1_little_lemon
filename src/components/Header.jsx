@@ -6,6 +6,7 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Navbar";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const pathname = useLocation();
@@ -31,9 +32,9 @@ const Header = () => {
     ${openNavigation ? "bg-n-1" : "bg-n-/90 backdrop-blur-sm "}`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
+        <Link className="block w-[12rem] xl:mr-8" to="/">
           <img src={logo} alt="logo" width={190} height={40} />
-        </a>
+        </Link>
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
@@ -41,9 +42,9 @@ const Header = () => {
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.id}
-                href={item.url}
+                to={item.url}
                 onClick={handleClick}
                 className={`block relative font-code text-2xl uppercase text-n-6 transition-colors hover:text-color-1 
                 ${item.onlyMobile ? "lg:hidden" : ""} 
@@ -56,20 +57,20 @@ const Header = () => {
                 lg:leading-5 lg:hover:text-n-8 xl:px-12 `}
               >
                 {item.title}
-              </a>
+              </Link>
             ))}
           </div>
           <HamburgerMenu />
         </nav>
-        <a
-          href="#signup"
+        <Link
+          to="/"
           className="button hidden mr-8 text-n-8/50 transition-colors hover:text-n-8 lg:block"
         >
           new account
-        </a>
+        </Link>
         <Button
           className="hidden lg:flex text-n-8/50 transition-colors hover:text-n-8 "
-          href="#login"
+          href="/"
         >
           Sign in
         </Button>

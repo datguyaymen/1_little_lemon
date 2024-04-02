@@ -2,33 +2,33 @@ export const navigation = [
   {
     id: "0",
     title: "Home",
-    url: "#home",
+    url: "/",
   },
   {
     id: "1",
     title: "About",
-    url: "#about",
+    url: "/",
   },
   {
     id: "2",
     title: "Menu",
-    url: "#specials",
+    url: "/",
   },
   {
     id: "3",
     title: "Reseravtions",
-    url: "#reseravtions",
+    url: "/reservations",
   },
   {
     id: "4",
     title: "Order online",
-    url: "#signup",
+    url: "/",
     onlyMobile: true,
   },
   {
     id: "5",
     title: "Sign in",
-    url: "#login",
+    url: "/",
     onlyMobile: true,
   },
 ];

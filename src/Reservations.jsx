@@ -1,0 +1,19 @@
+import Header from "./components/Header";
+import About from "./components/About";
+import ButtonGradient from "./assets/svg/ButtonGradient";
+
+const Reservations = () => {
+  return (
+    <div>
+      <>
+        <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+          <Header />
+          <About />
+        </div>
+        <ButtonGradient />
+      </>
+    </div>
+  );
+};
+
+export default Reservations;

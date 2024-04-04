@@ -7,12 +7,14 @@ export const navigation = [
   {
     id: "1",
     title: "About",
-    url: "/",
+    url: "#about",
+    scroll: true,
   },
   {
     id: "2",
     title: "Menu",
-    url: "/",
+    url: "#specials",
+    scroll: true,
   },
   {
     id: "3",

@@ -9,8 +9,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const pathname = useLocation();
+  const { hash } = useLocation();
   const [openNavigation, setopenNavigation] = useState(false);
+
   const toogleNavigation = () => {
     if (openNavigation) {
       setopenNavigation(false);
@@ -45,15 +46,11 @@ const Header = () => {
               <Link
                 key={item.id}
                 to={item.url}
-                onClick={handleClick}
+                onClick={() => handleClick}
                 className={`block relative font-code text-2xl uppercase text-n-6 transition-colors hover:text-color-1 
                 ${item.onlyMobile ? "lg:hidden" : ""} 
                 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold 
-                ${
-                  item.url === pathname.hash
-                    ? "z-2 lg:text-n-8/50"
-                    : "lg:text-n-8/50"
-                } 
+                ${item.url === hash ? "z-2 lg:text-n-8/50" : "lg:text-n-8/50"} 
                 lg:leading-5 lg:hover:text-n-8 xl:px-12 `}
               >
                 {item.title}

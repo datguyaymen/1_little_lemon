@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50 border-b border-n-2 lg:bg-n-1/90 lg:backdrop-blur-sm 
-    ${openNavigation ? "bg-n-1" : "bg-n-/90 backdrop-blur-sm "}`}
+    ${openNavigation ? "bg-n-1" : "bg-n-1/90 backdrop-blur-sm "}`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <Link className="block w-[12rem] xl:mr-8" to="/">
@@ -39,7 +39,7 @@ const Header = () => {
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
-          } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-1 lg:static lg:flex lg:mx-auto lg:bg-trasparent`}
+          } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-1 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item) => (
@@ -50,7 +50,7 @@ const Header = () => {
                 className={`block relative font-code text-2xl uppercase text-n-6 transition-colors hover:text-color-1 
                 ${item.onlyMobile ? "lg:hidden" : ""} 
                 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold 
-                ${item.url === hash ? "z-2 lg:text-n-8/50" : "lg:text-n-8/50"} 
+                ${item.url === hash ? "z-2 lg:text-n-8" : "lg:text-n-8/50"} 
                 lg:leading-5 lg:hover:text-n-8 xl:px-12 `}
               >
                 {item.title}

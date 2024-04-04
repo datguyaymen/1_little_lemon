@@ -8,13 +8,11 @@ export const navigation = [
     id: "1",
     title: "About",
     url: "#about",
-    scroll: true,
   },
   {
     id: "2",
     title: "Menu",
     url: "#specials",
-    scroll: true,
   },
   {
     id: "3",

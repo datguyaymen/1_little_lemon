@@ -1,11 +1,11 @@
 import {
+  NavLink as RouterLink,
   useLocation,
   useNavigate,
-  NavLink as RouterLink,
 } from "react-router-dom";
-import { restaurant } from "../assets";
-import { Link as ScrollLink } from "react-scroll";
 import * as Scroll from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { restaurant } from "../assets";
 
 const Footer = () => {
   const path = useLocation().pathname;
